@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Link García — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0d14;
+  --bg2:#12121c;
+  --card:#161622;
+  --border:#252535;
+  --orange:#f97316;
+  --orange2:#fb923c;
+  --pink:#ec4899;
+  --purple:#a855f7;
+  --purple2:#c084fc;
+  --white:#f1f5f9;
+  --text:#cbd5e1;
+  --muted:#64748b;
+  --muted2:#94a3b8;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+::selection{background:rgba(168,85,247,.35);color:#fff}
+a{text-decoration:none}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#252535;border-radius:3px}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 3rem;height:62px;
+  background:rgba(13,13,20,.9);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+}
+.nav-brand{
+  font-size:.95rem;font-weight:800;letter-spacing:-.01em;
+  color:var(--white);
+}
+.nav-brand em{color:var(--muted);font-style:normal}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{
+  font-size:.85rem;font-weight:500;color:var(--muted2);
+  transition:color .2s;
+}
+.nav-links a:hover{color:var(--white)}
+
+/* ── HERO ── */
+#hero{
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:80px 3rem 3rem;
+  position:relative;overflow:hidden;
+}
+.hero-glow-l{
+  position:absolute;top:20%;left:-10%;
+  width:500px;height:500px;
+  background:radial-gradient(circle,rgba(168,85,247,.09) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-glow-r{
+  position:absolute;bottom:10%;right:-5%;
+  width:400px;height:400px;
+  background:radial-gradient(circle,rgba(249,115,22,.07) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1050px;width:100%;
+  display:grid;grid-template-columns:360px 1fr;gap:5rem;align-items:center;
+  position:relative;z-index:1;
+  margin:0 auto;
+}
+
+/* photo side */
+.photo-col{
+  display:flex;flex-direction:column;align-items:center;gap:1.2rem;
+}
+/* breathing ring */
+.photo-ring{
+  position:relative;
+  width:300px;height:300px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+.photo-ring::before{
+  content:'';
+  position:absolute;inset:-3px;border-radius:50%;
+  background:conic-gradient(var(--orange),var(--pink),var(--purple),var(--orange));
+  animation:spin 6s linear infinite;
+}
+.photo-ring::after{
+  content:'';
+  position:absolute;inset:2px;border-radius:50%;
+  background:var(--bg);
+}
+.photo-inner{
+  position:absolute;inset:6px;border-radius:50%;
+  background:var(--card);
+  overflow:hidden;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.5rem;
+  /* breathing pulse */
+  animation:breathe 4s ease-in-out infinite;
+}
+.photo-inner img{
+  width:100%;height:100%;
+  object-fit:cover;border-radius:50%;
+  display:block;
+}
+.ph-icon{opacity:.2}
+.ph-txt{font-size:.65rem;color:var(--muted);font-weight:500}
+.hero-name{
+  font-size:1.9rem;font-weight:800;color:var(--white);
+  letter-spacing:-.02em;text-align:center;
+}
+.hero-quirks{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem .9rem;
+  max-width:280px;
+}
+.quirk{
+  font-size:.75rem;font-weight:500;
+}
+.quirk:nth-child(1){color:var(--pink)}
+.quirk:nth-child(2){color:var(--purple2)}
+.quirk:nth-child(3){color:var(--orange)}
+.quirk:nth-child(4){color:var(--pink)}
+.quirk:nth-child(5){color:var(--purple2)}
+
+/* text side */
+.hero-text{}
+.hero-eyebrow{
+  font-size:.85rem;font-weight:400;color:var(--muted2);
+  margin-bottom:.6rem;
+  opacity:0;animation:up .5s .1s forwards;
+}
+.hero-quote{
+  font-size:1.65rem;font-weight:800;
+  background:linear-gradient(135deg,var(--orange),var(--pink),var(--purple2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:.3rem;
+  opacity:0;animation:up .5s .18s forwards;
+}
+.hero-title{
+  font-size:clamp(2.2rem,4.2vw,4rem);
+  font-weight:900;color:var(--white);
+  letter-spacing:-.03em;line-height:1.0;
+  white-space:nowrap;
+  margin-bottom:1.4rem;
+  opacity:0;animation:up .5s .26s forwards;
+}
+/* two pill buttons like Noel */
+.hero-pills{
+  display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.8rem;
+  opacity:0;animation:up .5s .32s forwards;
+}
+.pill-static{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.55rem 1.3rem;border-radius:999px;
+  font-size:.82rem;font-weight:600;letter-spacing:.01em;
+}
+.pill-orange{
+  background:var(--orange);color:#fff;
+}
+.pill-terminal{
+  background:var(--card);color:var(--purple2);
+  border:1px solid var(--border);
+  font-family:'Courier New',monospace;
+}
+.pill-terminal span{color:var(--orange);margin-right:.25rem}
+/* stat */
+.hero-stat{
+  margin-bottom:2rem;
+  opacity:0;animation:up .5s .38s forwards;
+}
+.stat-big{
+  font-size:3rem;font-weight:900;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  line-height:1;
+}
+.stat-label{font-size:.82rem;color:var(--muted2);margin-top:.2rem}
+/* cta buttons */
+.hero-ctas{
+  display:flex;gap:.75rem;flex-wrap:wrap;
+  opacity:0;animation:up .5s .44s forwards;
+}
+.btn-orange{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.75rem 1.8rem;border-radius:999px;
+  background:linear-gradient(135deg,var(--orange),#f43f5e);
+  color:#fff;font-size:.88rem;font-weight:700;
+  transition:all .22s;
+  box-shadow:0 4px 20px rgba(249,115,22,.35);
+}
+.btn-orange:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(249,115,22,.5);color:#fff}
+.btn-dark{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.75rem 1.8rem;border-radius:999px;
+  background:var(--card);color:var(--white);
+  border:1px solid var(--border);
+  font-size:.88rem;font-weight:600;
+  transition:all .22s;
+}
+.btn-dark:hover{border-color:var(--purple2);color:var(--purple2);transform:translateY(-2px)}
+
+/* ── SECTIONS ── */
+.section-wrap{
+  max-width:1050px;margin:0 auto;
+  padding:5.5rem 3rem;
+}
+.section-title{
+  font-size:clamp(2rem,4vw,2.8rem);font-weight:900;
+  color:var(--white);letter-spacing:-.03em;
+  text-align:center;margin-bottom:3rem;
+}
+hr.div{border:none;border-top:1px solid var(--border)}
+
+/* ── ABOUT — single card, pink/red glowing border ── */
+.about-card{
+  max-width:860px;margin:0 auto;
+  background:var(--card);
+  border-radius:14px;
+  padding:2.8rem 3rem;
+  position:relative;
+}
+/* glowing border */
+.about-card::before{
+  content:'';position:absolute;inset:-1.5px;border-radius:15px;
+  background:linear-gradient(135deg,var(--pink),var(--purple),var(--orange));
+  z-index:-1;
+}
+.about-card::after{
+  content:'';position:absolute;inset:0;border-radius:14px;
+  background:var(--card);z-index:-1;
+}
+.about-p{
+  font-size:1rem;color:var(--text);
+  margin-bottom:1.2rem;line-height:1.85;
+  position:relative;z-index:1;
+}
+/* drop cap */
+.about-p .drop{
+  font-size:1.7rem;font-weight:900;line-height:1;
+  float:left;margin-right:.1rem;margin-top:.1rem;
+  color:var(--white);
+}
+/* inline highlights */
+.hl-orange{
+  background:linear-gradient(135deg,var(--orange),#f43f5e);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  font-weight:600;
+}
+.hl-purple{
+  background:linear-gradient(135deg,var(--purple),var(--pink));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  font-weight:600;
+}
+
+/* ── PROJECTS ── */
+.projects-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.25rem;
+}
+.proj-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:1.6rem;
+  cursor:pointer;transition:all .22s;position:relative;overflow:hidden;
+}
+.proj-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--orange),var(--pink),var(--purple));
+  transform:scaleX(0);transform-origin:left;transition:transform .25s;
+}
+.proj-card:hover{transform:translateY(-4px);border-color:rgba(236,72,153,.25);box-shadow:0 12px 36px rgba(0,0,0,.6)}
+.proj-card:hover::after{transform:scaleX(1)}
+.proj-org{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:.4rem}
+.proj-title{font-size:1.02rem;font-weight:700;color:var(--white);margin-bottom:.6rem}
+.proj-desc{font-size:.84rem;color:var(--muted2);line-height:1.62;margin-bottom:1rem}
+.proj-more{font-size:.78rem;color:var(--pink);display:inline-flex;align-items:center;gap:.3rem;transition:gap .18s}
+.proj-card:hover .proj-more{gap:.55rem}
+
+/* ── SKILLS — Noel's exact style: 2-col, floating vivid pills, no box ── */
+.skills-2col{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:3rem 4rem;
+}
+.skill-group-title{
+  font-size:1.1rem;font-weight:800;color:var(--white);
+  letter-spacing:-.01em;margin-bottom:1.1rem;
+}
+.skill-pills{display:flex;flex-wrap:wrap;gap:.5rem}
+/* each pill gets its own brand bg */
+.sp{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.42rem .85rem;
+  border-radius:8px;
+  font-size:.8rem;font-weight:600;color:#fff;
+  border:1px solid rgba(255,255,255,.08);
+  transition:transform .18s,filter .18s;
+}
+.sp:hover{transform:translateY(-2px);filter:brightness(1.15)}
+.sp img{width:17px;height:17px;object-fit:contain;flex-shrink:0}
+/* brand colours */
+.sp-python{background:#2b5b84}
+.sp-cpp{background:#004482}
+.sp-git{background:#c9300f}
+.sp-vscode{background:#0b74d0}
+.sp-github{background:#24292e;border-color:#444}
+.sp-win{background:#0a6eb4}
+.sp-mac{background:#2c2c2e;border-color:#555}
+.sp-android{background:#1f6e30}
+.sp-emu{background:#7c3aed}
+.sp-tex{background:#b45309}
+.sp-desk{background:#0f766e}
+.sp-cfw{background:#be185d}
+.sp-hw{background:#374151}
+.sp-oss{background:#065f46}
+/* plain text pills for domains */
+.sp-plain{
+  background:var(--card);color:var(--muted2);
+  border:1px solid var(--border);font-weight:500;
+}
+
+/* ── COMMUNITY ── */
+.comm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.comm-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:1.5rem;transition:all .22s;
+}
+.comm-card:hover{transform:translateY(-3px);border-color:rgba(236,72,153,.3)}
+.comm-head{display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem}
+.comm-ico{
+  width:40px;height:40px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.15rem;flex-shrink:0;
+}
+.ico-discord{background:rgba(88,101,242,.25);border:1px solid rgba(88,101,242,.4)}
+.ico-reddit{background:rgba(255,69,0,.2);border:1px solid rgba(255,69,0,.35)}
+.ico-paypal{background:rgba(0,100,240,.2);border:1px solid rgba(0,100,240,.3)}
+.ico-patreon{background:rgba(255,66,77,.2);border:1px solid rgba(255,66,77,.3)}
+.comm-name{font-size:.92rem;font-weight:700;color:var(--white)}
+.comm-sub{font-size:.68rem;color:var(--muted);margin-top:.1rem}
+.comm-desc{font-size:.83rem;color:var(--muted2);line-height:1.62;margin-bottom:.9rem}
+.comm-link{
+  font-size:.78rem;font-weight:600;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:inline-flex;align-items:center;gap:.3rem;
+  transition:gap .18s;
+}
+.comm-link:hover{gap:.55rem}
+
+/* ── CONTACT ── */
+#contact{text-align:center;padding:5rem 3rem}
+.contact-desc{color:var(--muted2);margin-bottom:2rem;font-size:.93rem}
+.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem}
+.cbadge{
+  display:inline-flex;align-items:center;gap:.45rem;
+  padding:.6rem 1.25rem;border-radius:999px;
+  border:1px solid var(--border);background:var(--card);
+  font-size:.8rem;font-weight:600;color:var(--text);
+  transition:all .2s;
+}
+.cbadge:hover{border-color:var(--pink);color:var(--white);transform:translateY(-2px);box-shadow:0 6px 20px rgba(236,72,153,.25)}
+.cbadge img{width:16px;height:16px}
+
+/* ── FOOTER ── */
+footer{
+  border-top:1px solid var(--border);
+  padding:1.5rem;text-align:center;
+  font-size:.75rem;color:var(--muted);
+}
+footer .fo{color:var(--orange)}
+footer .fp{color:var(--purple2)}
+
+/* ── MODAL ── */
+.overlay{
+  position:fixed;inset:0;z-index:200;
+  background:rgba(0,0,0,.85);backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:center;padding:2rem;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.overlay.open{opacity:1;pointer-events:all}
+.modal{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:2.5rem;
+  max-width:580px;width:100%;max-height:82vh;overflow-y:auto;
+  position:relative;
+  transform:translateY(18px);transition:transform .25s;
+}
+.overlay.open .modal{transform:none}
+.modal-x{
+  position:absolute;top:1rem;right:1rem;
+  width:30px;height:30px;border-radius:6px;
+  background:var(--bg2);border:1px solid var(--border);
+  color:var(--muted);font-size:.85rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .18s;
+}
+.modal-x:hover{color:#fff;border-color:var(--pink)}
+.modal-org{font-size:.68rem;font-weight:700;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.4rem}
+.modal h3{font-size:1.25rem;font-weight:800;color:var(--white);margin-bottom:1rem}
+.modal p{font-size:.88rem;color:var(--muted2);margin-bottom:.8rem;line-height:1.75}
+.modal-tech-hd{font-size:.65rem;font-weight:700;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin:1.2rem 0 .5rem}
+.tech-chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.tc{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:5px;padding:.22rem .6rem;
+  font-size:.73rem;color:var(--purple2);font-weight:600;
+}
+.modal-gh{
+  display:inline-flex;align-items:center;gap:.4rem;
+  margin-top:1.1rem;font-size:.82rem;font-weight:700;
+  background:linear-gradient(135deg,var(--orange),var(--pink));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}
+.reveal.on{opacity:1;transform:none}
+
+/* ── KEYFRAMES ── */
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes breathe{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.025)}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:800px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:2.5rem}
+  .photo-col{margin:0 auto}
+  .hero-pills,.hero-ctas{justify-content:center}
+  .skills-2col{grid-template-columns:1fr;gap:2rem}
+  nav{padding:0 1.5rem}
+  .nav-links{gap:1.2rem}
+  .section-wrap{padding:4rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand"><em>&lt;</em> Link García <em></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow-l"></div>
+  <div class="hero-glow-r"></div>
+  <div class="hero-inner">
+
+    <!-- LEFT: photo + name + quirks -->
+    <div class="photo-col">
+      <div class="photo-ring">
+        <div class="photo-inner">
+          <img id="photo" src="photo-16bit.jpg" alt="Link" style="width:100%;height:100%;object-fit:cover;border-radius:50%;transition:opacity 0.6s ease;">
+        </div>
+      </div>
+      <div class="hero-name">Link</div>
+      <div class="hero-quirks">
+        <span class="quirk">Hobbyist Dev</span>
+        <span class="quirk">Musician</span>
+        <span class="quirk">PPSSPP Modder</span>
+        <span class="quirk">Switch Homebrew</span>
+        <span class="quirk">Barcelona 🌍</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: text -->
+    <div class="hero-text">
+      <p class="hero-eyebrow">Welcome to my portfolio!</p>
+      <p class="hero-quote">"I do my best."</p>
+      <h1 class="hero-title">Software Engineer</h1>
+      <div class="hero-pills">
+        <span class="pill-static pill-orange">Amateur Programmer</span>
+        <span class="pill-static pill-terminal"><span>&gt;</span><span id="tw">Tinkerer</span></span>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-big">2020+</div>
+        <div class="stat-label">Years in the scene</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-orange">View My Work</a>
+        <a href="https://github.com/LiinkPK" target="_blank" class="btn-dark">⬡ GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ABOUT -->
+<div class="section-wrap" id="about">
+  <h2 class="section-title reveal">About Me</h2>
+  <div class="about-card reveal">
+    <p class="about-p">
+      <span class="drop">H</span>obbyist dev and musician who builds tools for things I actually care about — <span class="hl-orange">emulation, usability, and scratching my own itch</span>. Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long enough to start contributing to it.
+    </p>
+    <p class="about-p">
+      <span class="drop">M</span>ost of what I build is either solving a problem I ran into personally, or <span class="hl-purple">making life easier for the people around me</span>. If the workflow is a mess, I fix it. If nobody made the tool I need, I make it myself.
+    </p>
+    <p class="about-p">
+      <span class="drop">P</span>art of the <span class="hl-orange">Switch Atmosphere/Switchway homebrew scene since 2020</span> — helping people with CFW, hardware repairs, and everything between soldering irons and firmware.
+    </p>
+    <p class="about-p" style="margin-bottom:0">
+      <span class="drop">B</span>ased in <span class="hl-purple">Barcelona</span>, building things I actually use, one project at a time.
+    </p>
+  </div>
+</div>
+
+<hr class="div"/>
+
+<!-- PROJECTS -->
+<div class="section-wrap" id="projects">
+  <h2 class="section-title reveal">Notable Projects</h2>
+  <div class="projects-grid">
+    <div class="proj-card reveal" onclick="openModal('ppsspp-tool')">
+      <p class="proj-org">PPSSPP</p>
+      <h3 class="proj-title">Texture Replacement Tool</h3>
+      <p class="proj-desc">A desktop GUI for managing HD texture packs on PPSSPP. The existing workflow was scattered and painful — so I built a proper tool for it.</p>
+      <span class="proj-more">View full →</span>
+    </div>
+    <div class="proj-card reveal" onclick="openModal('dissidia')">
+      <p class="proj-org">Final Fantasy</p>
+      <h3 class="proj-title">Dissidia 012 HD Textures</h3>
+      <p class="proj-desc">High-res texture pack for Dissidia 012 on PPSSPP. Fork of AkiraJkr's work, extended and maintained with community feedback.</p>
+      <span class="proj-more">View full →</span>
+    </div>
+    <div class="proj-card reveal" onclick="openModal('helpme')">
+      <p class="proj-org">Home Project</p>
+      <h3 class="proj-title">HelpMeKiddo</h3>
+      <p class="proj-desc">One-stop TV app launcher for the living room. Built so my family stops calling me for tech support every time they want to watch something.</p>
+      <span class="proj-more">View full →</span>
+    </div>
+    <div class="proj-card reveal" onclick="openModal('ppsspp-fork')">
+      <p class="proj-org">Open Source</p>
+      <h3 class="proj-title">PPSSPP Fork</h3>
+      <p class="proj-desc">Added "Dump textures from ISO/Folder" to upstream PPSSPP. Small change, significant time saver for texture pack builders.</p>
+      <span class="proj-more">View full →</span>
+    </div>
+  </div>
+</div>
+
+<hr class="div"/>
+
+<!-- SKILLS — Noel's floating vivid pill style, 2-column -->
+<div class="section-wrap" id="skills">
+  <h2 class="section-title reveal">Skills</h2>
+  <div class="skills-2col">
+
+    <div class="reveal">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-pills">
+        <span class="sp sp-python">
+          <img src="https://cdn.simpleicons.org/python/FFD43B" alt="">Python
+        </span>
+        <span class="sp sp-cpp">
+          <img src="https://cdn.simpleicons.org/cplusplus/659AD2" alt="">C++
+        </span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="skill-group-title">Tools</div>
+      <div class="skill-pills">
+        <span class="sp sp-git">
+          <img src="https://cdn.simpleicons.org/git/ffffff" alt="">Git
+        </span>
+        <span class="sp sp-vscode">
+          <img src="https://cdn.simpleicons.org/visualstudiocode/ffffff" alt="">VS Code
+        </span>
+        <span class="sp sp-github">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="">GitHub
+        </span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="skill-group-title">Platforms</div>
+      <div class="skill-pills">
+        <span class="sp sp-win">
+          <img src="https://cdn.simpleicons.org/windows/ffffff" alt="">Windows
+        </span>
+        <span class="sp sp-mac">
+          <img src="https://cdn.simpleicons.org/apple/ffffff" alt="">macOS
+        </span>
+        <span class="sp sp-android">
+          <img src="https://cdn.simpleicons.org/android/ffffff" alt="">Android
+        </span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="skill-group-title">Domains</div>
+      <div class="skill-pills">
+        <span class="sp sp-emu">Emulation</span>
+        <span class="sp sp-tex">Texture Modding</span>
+        <span class="sp sp-desk">Desktop Apps</span>
+        <span class="sp sp-cfw">Switch CFW</span>
+        <span class="sp sp-hw">HW Repair</span>
+        <span class="sp sp-oss">Open Source</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="div"/>
+
+<!-- COMMUNITY -->
+<div class="section-wrap" id="community">
+  <h2 class="section-title reveal">Community &amp; Support</h2>
+  <div class="comm-grid">
+    <div class="comm-card reveal">
+      <div class="comm-head">
+        <div class="comm-ico ico-discord">💬</div>
+        <div><div class="comm-name">Dissidia Discord</div><div class="comm-sub">Community Server</div></div>
+      </div>
+      <p class="comm-desc">The Discord server for the Dissidia Final Fantasy community — HD texture discussion, modding help, and project updates.</p>
+      <a href="https://discord.gg/W9rcyMJ7br" class="comm-link" target="_blank">Join server →</a>
+    </div>
+    <div class="comm-card reveal">
+      <div class="comm-head">
+        <div class="comm-ico ico-reddit">📄</div>
+        <div><div class="comm-name">Dissidia 012 HD Remaster</div><div class="comm-sub">Reddit · r/dissidia</div></div>
+      </div>
+      <p class="comm-desc">Original Reddit post announcing the Dissidia 012 HD Remastered texture project — discussion, feedback, and progress updates.</p>
+      <a href="https://www.reddit.com/r/dissidia/comments/1g6peh2/dissidia_012_hd_remastered_wip/" class="comm-link" target="_blank">View post →</a>
+    </div>
+    <div class="comm-card reveal">
+      <div class="comm-head">
+        <div class="comm-ico ico-paypal">💙</div>
+        <div><div class="comm-name">Support via PayPal</div><div class="comm-sub">paypal.me/liinkpk</div></div>
+      </div>
+      <p class="comm-desc">If any of my projects have been useful to you, a tip is always appreciated and helps keep things going.</p>
+      <a href="https://paypal.me/liinkpk" class="comm-link" target="_blank">Donate →</a>
+    </div>
+    <div class="comm-card reveal">
+      <div class="comm-head">
+        <div class="comm-ico ico-patreon">🎨</div>
+        <div><div class="comm-name">Patreon</div><div class="comm-sub">patreon.com/c/LinkG</div></div>
+      </div>
+      <p class="comm-desc">Support ongoing projects and get updates on what I'm working on through Patreon membership.</p>
+      <a href="https://patreon.com/c/LinkG/membership" class="comm-link" target="_blank">Become a member →</a>
+    </div>
+  </div>
+</div>
+
+<hr class="div"/>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title reveal">Get In Touch</h2>
+  <p class="contact-desc reveal">Open to collaborations, modding questions, or just a chat about emulation and homebrew.</p>
+  <div class="contact-links reveal">
+    <a href="https://github.com/LiinkPK" class="cbadge" target="_blank"><img src="https://cdn.simpleicons.org/github/ffffff" alt="">GitHub</a>
+    <a href="https://discord.gg/W9rcyMJ7br" class="cbadge" target="_blank"><img src="https://cdn.simpleicons.org/discord/5865F2" alt="">Discord</a>
+    <a href="https://www.reddit.com/r/dissidia/comments/1g6peh2/dissidia_012_hd_remastered_wip/" class="cbadge" target="_blank"><img src="https://cdn.simpleicons.org/reddit/FF4500" alt="">Reddit</a>
+    <a href="https://paypal.me/liinkpk" class="cbadge" target="_blank"><img src="https://cdn.simpleicons.org/paypal/003087" alt="">PayPal</a>
+    <a href="https://patreon.com/c/LinkG/membership" class="cbadge" target="_blank"><img src="https://cdn.simpleicons.org/patreon/FF424D" alt="">Patreon</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="fo">&lt;</span> Built with passion by <span class="fp">Link García</span> <span class="fo">/&gt;</span> &nbsp;·&nbsp; Barcelona &nbsp;·&nbsp; © 2026
+</footer>
+
+<!-- MODAL -->
+<div class="overlay" id="ov" onclick="closeOut(event)">
+  <div class="modal">
+    <div class="modal-x" onclick="closeModal()">✕</div>
+    <div id="mbody"></div>
+  </div>
+</div>
+
+<script>
+const MODALS={
+  'ppsspp-tool':{org:'PPSSPP · Desktop App',title:'Texture Replacement Tool for PPSSPP',
+    body:`<p>A desktop GUI for managing HD texture packs on PPSSPP. The existing workflow involved manually organizing folders, renaming files, and cross-referencing texture hashes — painful for anyone building or using a texture pack.</p><p>This tool gives you a proper interface for all of it: browsing, applying, and managing HD texture replacements for any game on PPSSPP.</p>`,
+    tech:['Python','Desktop GUI','PPSSPP','Windows'],link:'https://github.com/LiinkPK/Texture-Replacement-Tool-for-PPSSPP'},
+  'dissidia':{org:'Final Fantasy · Texture Mod',title:'Dissidia 012 HD Remastered Textures',
+    body:`<p>High-resolution texture pack for Dissidia 012 Final Fantasy, designed for the PPSSPP emulator. A fork of AkiraJkr's original work, extended and maintained with higher fidelity assets.</p><p>The project gained traction in the Dissidia community on Reddit and Discord, with ongoing development shaped by community feedback.</p>`,
+    tech:['Texture Modding','PPSSPP','Image Processing'],link:'https://github.com/LiinkPK/Dissidia-012-HD-Textures'},
+  'helpme':{org:'Home Project · Desktop App',title:'HelpMeKiddo',
+    body:`<p>A TV app launcher for the living room — one place for all streaming and TV apps, without navigating smart TV menus or calling someone for help.</p><p>Built specifically so non-technical family members can get to what they want from a single, simple interface. The name says it all.</p>`,
+    tech:['Python','Desktop App','Windows','TV/Media'],link:'https://github.com/LiinkPK/HelpMeKiddo'},
+  'ppsspp-fork':{org:'Open Source · PPSSPP',title:'PPSSPP Fork — Dump Textures from ISO',
+    body:`<p>A fork of the upstream PPSSPP emulator with one key addition: the ability to dump textures directly from an ISO or folder, without needing to run through the full game to trigger texture loads.</p><p>Small change, significant time saver for building texture packs.</p>`,
+    tech:['C++','PPSSPP','Open Source','Emulation'],link:'https://github.com/LiinkPK/ppsspp'}
+};
+
+function openModal(id){
+  const d=MODALS[id];
+  document.getElementById('mbody').innerHTML=`
+    <p class="modal-org">${d.org}</p><h3>${d.title}</h3>${d.body}
+    <p class="modal-tech-hd">Tech Used</p>
+    <div class="tech-chips">${d.tech.map(t=>`<span class="tc">${t}</span>`).join('')}</div>
+    <a href="${d.link}" class="modal-gh" target="_blank">View on GitHub ↗</a>`;
+  document.getElementById('ov').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){document.getElementById('ov').classList.remove('open');document.body.style.overflow='';}
+function closeOut(e){if(e.target===document.getElementById('ov'))closeModal();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+// scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const siblings=[...e.target.parentElement.querySelectorAll('.reveal:not(.on)')];
+      siblings.forEach((s,i)=>{s.style.transitionDelay=i*.08+'s';s.classList.add('on');});
+    }
+  });
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// typewriter in the terminal pill
+const phrases=['Tinkerer','Texture Modder','Homebrew Dev','Open Source','Musician'];
+let pi=0,ci=0,del=false;
+const tw=document.getElementById('tw');
+function type(){
+  const p=phrases[pi];
+  if(!del){ci++;tw.textContent=p.slice(0,ci);if(ci===p.length){del=true;setTimeout(type,1600);return;}}
+  else{ci--;tw.textContent=p.slice(0,ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}
+  setTimeout(type,del?40:75);
+}
+setTimeout(type,1000);
+</script>
+</body>
+</html>
