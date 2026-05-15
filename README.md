@@ -3,22 +3,30 @@
 <!-- Typing SVG header -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Link;Amateur+programmer+%7C+Tinkerer;I+do+my+best.)](https://git.io/typing-svg)
 
-<!-- Visitor counter -->
-![Visitor Count](https://komarev.com/ghpvc/?username=LiinkPK&color=7aa2f7&style=for-the-badge&label=PROFILE+VIEWS)
-
 </div>
 
 ---
 
 ## About Me
 
-I'm a hobbyist dev who builds tools for things I actually care about — emulation, usability, and scratching my own itch.  
-Not a game dev, but I've been deep in the PPSSPP rabbit hole long enough to start contributing to it.
+I'm a hobbyist dev and musician who builds tools for things I actually care about: emulation, usability, and scratching my own itch.  
+Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long enough to start contributing to it.
 
-- 🔧 I build **desktop tools** that solve real, specific problems
-- 🎮 I mod textures and dig into emulators — [PPSSPP](https://github.com/LiinkPK/ppsspp) is my playground
-- 📺 I made [**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) so my family stops asking me to update their TV apps
+- 🔧 I build **desktop tools** that solve real, specific problems.
+- 🎮 I mod textures and dig into emulators — [PPSSPP](https://github.com/LiinkPK/ppsspp) is my playground.
+- 📺 I made [**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) so my family stops asking me to update their TV apps.
+- 🔩 Part of the **Switch Atmosphere/Switchway** homebrew scene since 2020. Helping people with CFW and hardware issues.
 - 🌍 Based in Barcelona
+
+<br>
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=7aa2f7)
+![C++](https://img.shields.io/badge/C++-0d1117?style=flat-square&logo=cplusplus&logoColor=bb9af7)
+![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=f7768e)
+![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=flat-square&logo=visual-studio-code&logoColor=7aa2f7)
+![Windows](https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=9ece6a)
+&nbsp;
+![Visitor Count](https://komarev.com/ghpvc/?username=LiinkPK&color=7aa2f7&style=flat-square&label=visitors)
 
 ---
 
@@ -70,12 +78,16 @@ Not a game dev, but I've been deep in the PPSSPP rabbit hole long enough to star
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=7aa2f7)
-![C++](https://img.shields.io/badge/C++-0d1117?style=flat-square&logo=cplusplus&logoColor=bb9af7)
-![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=f7768e)
-![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=flat-square&logo=visual-studio-code&logoColor=7aa2f7)
-![Windows](https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=9ece6a)
+[![Dissidia Community](https://img.shields.io/badge/Dissidia_Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/W9rcyMJ7br)
+&nbsp;
+[![Dissidia 012 HD Remaster — Reddit](https://img.shields.io/badge/Dissidia_012_HD_Remaster-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/dissidia/comments/1g6peh2/dissidia_012_hd_remastered_wip/)
+&nbsp;
+[![PayPal](https://img.shields.io/badge/PayPal-003087?style=flat-square&logo=paypal&logoColor=white)](https://paypal.me/liinkpk)
+&nbsp;
+[![Patreon](https://img.shields.io/badge/Patreon-FF424D?style=flat-square&logo=patreon&logoColor=white)](https://patreon.com/c/LinkG/membership)
 
 </div>
+
+<br>
 
 <div align="center"><sub>🫤 I do my best.</sub></div>
