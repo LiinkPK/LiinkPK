@@ -1,28 +1,35 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Link;Amateur+programmer+%7C+Tinkerer;I+do+my+best.)](https://git.io/typing-svg)
+<!-- Typing SVG header -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Link;Amateur+programmer+%7C+Tinkerer;I+do+my+best.)](https://git.io/typing-svg)
 
-![Visitor Count](https://komarev.com/ghpvc/?username=LiinkPK&color=7aa2f7&style=flat-square&label=profile+views)
+<!-- Visitor counter -->
+![Visitor Count](https://komarev.com/ghpvc/?username=LiinkPK&color=7aa2f7&style=for-the-badge&label=PROFILE+VIEWS)
 
 </div>
 
 ---
 
-I make tools for stuff I actually use. Not a game dev — just someone who ended up way too deep in PPSSPP and started fixing things instead of complaining about them. Most of what I build is either scratching my own itch or making life easier for the people around me.
+## About Me
 
-Currently in Barcelona.
+I'm a hobbyist dev who builds tools for things I actually care about — emulation, usability, and scratching my own itch.  
+Not a game dev, but I've been deep in the PPSSPP rabbit hole long enough to start contributing to it.
+
+- 🔧 I build **desktop tools** that solve real, specific problems
+- 🎮 I mod textures and dig into emulators — [PPSSPP](https://github.com/LiinkPK/ppsspp) is my playground
+- 📺 I made [**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) so my family stops asking me to update their TV apps
+- 🌍 Based in Barcelona
 
 ---
 
-**What I've built:**
+## Projects
 
-[**Texture Replacement Tool for PPSSPP**](https://github.com/LiinkPK/Texture-Replacement-Tool-for-PPSSPP) — a proper desktop GUI for managing HD texture packs. The existing workflow was a mess, so I made this.
-
-[**Dissidia 012 HD Textures**](https://github.com/LiinkPK/Dissidia-012-HD-Textures) — high-res texture pack for Dissidia 012 on PPSSPP. Fork of AkiraJkr's work, maintained and extended.
-
-[**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) — TV app launcher for the living room TV. Built it so my family has one place for everything and stops calling me for help.
-
-[**PPSSPP fork**](https://github.com/LiinkPK/ppsspp) — added "Dump textures from ISO" to upstream PPSSPP. Small thing, but it saves a lot of time when building texture packs.
+| Project | What it does |
+|---|---|
+| [Texture Replacement Tool for PPSSPP](https://github.com/LiinkPK/Texture-Replacement-Tool-for-PPSSPP) | Desktop GUI for managing HD texture packs on PPSSPP |
+| [Dissidia 012 HD Textures](https://github.com/LiinkPK/Dissidia-012-HD-Textures) | HD remaster for Dissidia 012 Final Fantasy |
+| [HelpMeKiddo](https://github.com/LiinkPK/HelpMeKiddo) | One-stop TV app launcher — no more tech support calls from family |
+| [PPSSPP Fork](https://github.com/LiinkPK/ppsspp) | Added "Dump textures from ISO/Folder" to upstream PPSSPP |
 
 ---
 
