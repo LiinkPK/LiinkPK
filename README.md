@@ -3,6 +3,8 @@
 <!-- Typing SVG header -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Link;Amateur+programmer+%7C+Tinkerer;I+do+my+best.)](https://git.io/typing-svg)
 
+![Visitor Count](https://komarev.com/ghpvc/?username=LiinkPK&color=7aa2f7&style=for-the-badge&label=PROFILE+VIEWS)
+
 </div>
 
 ---
@@ -25,8 +27,8 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 ![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=f7768e)
 ![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=flat-square&logo=visual-studio-code&logoColor=7aa2f7)
 ![Windows](https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=9ece6a)
-&nbsp;
-![Visitor Count](https://komarev.com/ghpvc/?username=LiinkPK&color=7aa2f7&style=flat-square&label=visitors)
+![macOS](https://img.shields.io/badge/macOS-0d1117?style=flat-square&logo=apple&logoColor=c0caf5)
+![Android](https://img.shields.io/badge/Android-0d1117?style=flat-square&logo=android&logoColor=9ece6a)
 
 ---
 
@@ -43,7 +45,7 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=LiinkPK&theme=tokyonight&column=6&margin-w=8&no-frame=true&no-bg=true)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=LiinkPK&theme=onedark&column=6&margin-w=8&no-frame=true&no-bg=true)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
@@ -51,14 +53,7 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 
 <div align="center">
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=LiinkPK&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LiinkPK&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7aa2f7&text_color=c0caf5" />
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=LiinkPK&theme=tokyonight-duo&hide_border=true&background=0d1117&ring=7aa2f7&fire=bb9af7&currStreakLabel=7aa2f7&sideLabels=c0caf5&dates=565f89)](https://github.com/DenverCoder1/github-readme-streak-stats)
+[![LiinkPK's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=LiinkPK&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=7aa2f7&line=bb9af7&point=7aa2f7&area=true&area_color=7aa2f7)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
