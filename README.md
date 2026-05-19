@@ -38,7 +38,7 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 |---|---|
 | [Texture Replacement Tool for PPSSPP](https://github.com/LiinkPK/Texture-Replacement-Tool-for-PPSSPP) | Desktop GUI for managing HD texture packs on PPSSPP |
 | [Dissidia 012 HD Textures](https://github.com/LiinkPK/Dissidia-012-HD-Textures) | HD remaster for Dissidia 012 Final Fantasy |
-| [HelpMeKiddo](https://github.com/LiinkPK/HelpMeKiddo) | One-stop TV app launcher — no more tech support calls from family |
+| [HelpMeKiddo](https://github.com/LiinkPK/HelpMeKiddo) | One-stop TV app launcher. No more tech support calls from family |
 | [PPSSPP Fork](https://github.com/LiinkPK/ppsspp) | Added "Dump textures from ISO/Folder" to upstream PPSSPP |
 
 ---
