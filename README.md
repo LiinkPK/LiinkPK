@@ -15,7 +15,7 @@ I'm a hobbyist dev and musician who builds tools for things I actually care abou
 Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long enough to start contributing to it.
 
 - 🔧 I build **desktop tools** that solve real, specific problems.
-- 🎮 I mod textures and dig into emulators — [PPSSPP](https://github.com/LiinkPK/ppsspp) is my playground.
+- 🎮 I mod textures and dig into emulators. [PPSSPP](https://github.com/LiinkPK/ppsspp) is my playground.
 - 📺 I made [**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) so my family stops asking me to update their TV apps.
 - 🔩 Part of the **Switch Atmosphere/Switchway** homebrew scene since 2020. Helping people with CFW and hardware issues.
 - 🌍 Based in Barcelona
@@ -25,8 +25,8 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=7aa2f7)
 ![C++](https://img.shields.io/badge/C++-0d1117?style=flat-square&logo=cplusplus&logoColor=bb9af7)
 ![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=f7768e)
-![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=flat-square&logo=visual-studio-code&logoColor=7aa2f7)
-![Windows](https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=9ece6a)
+![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBmaWxsPSIjMDA3QUNDIj48cGF0aCBkPSJNNzQuNSA1LjJMMzguMSAzNy44IDE1LjYgMjAuOSA1LjQgMjYuOXY0Ni4ybDEwLjIgNiAyMi41LTE2LjkgMzYuNCAzMi42IDEwLjEtNS40VjEwLjZMNzQuNSA1LjJ6bTAgMTkuOHY1MEw1MS4xIDUwIDc0LjUgMjV6Ii8+PC9zdmc+)
+![Windows](https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0iIzAwNzhENCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIi8+PHJlY3QgeD0iMjQiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIvPjxyZWN0IHg9IjAiIHk9IjI0IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiLz48cmVjdCB4PSIyNCIgeT0iMjQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIvPjwvc3ZnPg==)
 ![macOS](https://img.shields.io/badge/macOS-0d1117?style=flat-square&logo=apple&logoColor=c0caf5)
 ![Android](https://img.shields.io/badge/Android-0d1117?style=flat-square&logo=android&logoColor=9ece6a)
 
@@ -57,15 +57,7 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 
 </div>
 
----
-
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LiinkPK/LiinkPK/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LiinkPK/LiinkPK/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/LiinkPK/LiinkPK/output/github-snake-dark.svg" />
-</picture>
 
 </div>
 
