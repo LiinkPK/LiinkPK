@@ -15,8 +15,9 @@ I'm a hobbyist dev and musician who builds tools for things I actually care abou
 Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long enough to start contributing to it.
 
 - 🔧 I build **desktop tools** that solve real, specific problems.
-- 🎮 I mod textures and dig into emulators. [PPSSPP](https://github.com/LiinkPK/ppsspp) is my playground.
+- 🎮 I mod textures and dig into emulators. [**PPSSPP**](https://github.com/LiinkPK/ppsspp) is my playground.
 - 📺 I made [**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) so my family stops asking me to update their TV apps.
+- ⏹️ I created [**OpenQR Studio**](https://openqrstudio.com), a free, browser-based QR code generator. No account, no watermark and fully customizables.
 - 🔩 Part of the **Switch Atmosphere/Switchway** homebrew scene since 2020. Helping people with CFW and hardware issues.
 - 🌍 Based in Barcelona
 
@@ -43,23 +44,8 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 
 ---
 
-<div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=LiinkPK&theme=onedark&column=6&margin-w=8&no-frame=true&no-bg=true)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-<div align="center">
-
-[![LiinkPK's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=LiinkPK&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=7aa2f7&line=bb9af7&point=7aa2f7&area=true&area_color=7aa2f7)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
-<div align="center">
-
-</div>
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LiinkPK&theme=tokyonight&hide_border=true)](https://github.com/anuraghazra/github-readme-stats) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LiinkPK&theme=tokyonight&hide_border=true&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
