@@ -23,13 +23,17 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=7aa2f7)
-![C++](https://img.shields.io/badge/C++-0d1117?style=flat-square&logo=cplusplus&logoColor=bb9af7)
-![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=f7768e)
-![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBmaWxsPSIjMDA3QUNDIj48cGF0aCBkPSJNNzQuNSA1LjJMMzguMSAzNy44IDE1LjYgMjAuOSA1LjQgMjYuOXY0Ni4ybDEwLjIgNiAyMi41LTE2LjkgMzYuNCAzMi42IDEwLjEtNS40VjEwLjZMNzQuNSA1LjJ6bTAgMTkuOHY1MEw1MS4xIDUwIDc0LjUgMjV6Ii8+PC9zdmc+)
-![Windows](https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0iIzAwNzhENCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIi8+PHJlY3QgeD0iMjQiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIvPjxyZWN0IHg9IjAiIHk9IjI0IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiLz48cmVjdCB4PSIyNCIgeT0iMjQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIvPjwvc3ZnPg==)
-![macOS](https://img.shields.io/badge/macOS-0d1117?style=flat-square&logo=apple&logoColor=c0caf5)
-![Android](https://img.shields.io/badge/Android-0d1117?style=flat-square&logo=android&logoColor=9ece6a)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+[![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
+[![PowerShell](https://custom-icon-badges.demolab.com/badge/PowerShell-5391FE?logo=powershell-white&logoColor=fff)](#)
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
+[![VS Code](https://custom-icon-badges.demolab.com/badge/VS%20Code-0078d7.svg?logo=visualstudiocode&logoColor=white)](#)
+[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=fff)](#)
+[![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
+[![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0)](#)
+[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)](#)
+[![Nintendo](https://custom-icon-badges.demolab.com/badge/Switch-E60012?logo=nintendo&logoColor=fff)](#)
 
 ---
 
