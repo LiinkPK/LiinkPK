@@ -45,6 +45,7 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 | [Dissidia 012 HD Textures](https://github.com/LiinkPK/Dissidia-012-HD-Textures) | HD remaster for Dissidia 012 Final Fantasy |
 | [HelpMeKiddo](https://github.com/LiinkPK/HelpMeKiddo) | One-stop TV app launcher. No more tech support calls from family |
 | [PPSSPP Fork](https://github.com/LiinkPK/ppsspp) | Added "Dump textures from ISO/Folder" to upstream PPSSPP |
+| [OpenQR Studio](https://github.com/OpenQRStudio) | Free QR code generator and editor. No account and no server. |
 
 ---
 
