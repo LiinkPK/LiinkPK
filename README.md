@@ -41,10 +41,10 @@ Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long eno
 
 | Project | What it does |
 |---|---|
+| [Dissidia 012 HD Remastered](https://github.com/LiinkPK/Dissidia012-PC) | HD Remaster and PC/Android port of Dissidia 012 Final Fantasy |
+| [Dissidia 012 HD Textures](https://github.com/LiinkPK/Dissidia-012-HD-Textures) | HD texture pack for Dissidia 012, made for PPSSPP and for my port |
 | [Texture Replacement Tool for PPSSPP](https://github.com/LiinkPK/Texture-Replacement-Tool-for-PPSSPP) | Desktop GUI for managing HD texture packs on PPSSPP |
-| [Dissidia 012 HD Textures](https://github.com/LiinkPK/Dissidia-012-HD-Textures) | HD remaster for Dissidia 012 Final Fantasy |
 | [HelpMeKiddo](https://github.com/LiinkPK/HelpMeKiddo) | One-stop TV app launcher. No more tech support calls from family |
-| [PPSSPP Fork](https://github.com/LiinkPK/ppsspp) | Added "Dump textures from ISO/Folder" to upstream PPSSPP |
 | [OpenQR Studio](https://github.com/OpenQRStudio) | Free QR code generator and editor. No account and no server. |
 
 ---
