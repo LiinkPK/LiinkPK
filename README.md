@@ -15,6 +15,7 @@ I'm a hobbyist dev and musician who builds tools for things I actually care abou
 Not a game dev, but I've been deep in the Switch and PPSSPP rabbit hole long enough to start contributing to it.
 
 - 🔧 I build **desktop tools** that solve real, specific problems.
+- 🪶 I created [Dissidia 012 Final Fantasy HD Remastered](https://github.com/LiinkPK/Dissidia012-PC) for Desktop an Android.
 - 🎮 I mod textures and dig into emulators. [**PPSSPP**](https://github.com/LiinkPK/ppsspp) is my playground.
 - 📺 I made [**HelpMeKiddo**](https://github.com/LiinkPK/HelpMeKiddo) so my family stops asking me to update their TV apps.
 - ⏹️ I created [**OpenQR Studio**](https://openqrstudio.com), a free, browser-based QR code generator. No account, no watermark and fully customizables.
